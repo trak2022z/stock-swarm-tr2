@@ -26,9 +26,9 @@ services:
 
   stock-app:
     image: raphau/stock-exchange-backend:latest
-    volumes:
-      - ./stockExchange:/app
-      - ~/.m2:/root/.m2
+    # volumes:
+    #   - ./stockExchange:/app
+    #   - ~/.m2:/root/.m2
     working_dir: /app
     environment:
       - SPRING_RABBITMQ_HOST=rabbitmq
@@ -54,9 +54,9 @@ services:
 
   traffic-app:
     image: raphau/traffic-generator-backend:latest
-    volumes:
-      - ./traffic-generator:/app
-      - ~/.m2:/root/.m2
+    # volumes:
+    #   - ./traffic-generator:/app
+    #   - ~/.m2:/root/.m2
     working_dir: /app
     environment:
         - SPRING_RABBITMQ_HOST=rabbitmq

@@ -18,7 +18,7 @@ services:
       MYSQL_DATABASE: stock_exchange
       MYSQL_ROOT_PASSWORD: password
       MYSQL_ROOT_HOST: '%'
-    command: "--max_connections=10000"
+    command: "--max_connections=500000"
     ports:
       - "3306:3306"
     networks:

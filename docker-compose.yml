@@ -13,7 +13,7 @@ services:
       - app-network
 
   stock-mysql:
-    image: mysql/mysql-server:5.7
+    image: raphau/mysql:latest
     environment:
       MYSQL_DATABASE: stock_exchange
       MYSQL_ROOT_PASSWORD: password
@@ -42,7 +42,7 @@ services:
       - app-network
 
   traffic-mysql:
-    image: mysql/mysql-server:5.7
+    image: raphau/mysql:latest
     environment:
       MYSQL_DATABASE: traffic_generator
       MYSQL_ROOT_PASSWORD: password
